@@ -1,9 +1,9 @@
 import time
-
 import pytest
+from tests.tests_course_playwright.config.config import ENV_CONFIG
 from playwright.sync_api import sync_playwright
 import os
-from config.config import ENV_CONFIG
+
 
 def pytest_addoption(parser):
     parser.addoption(
@@ -13,6 +13,7 @@ def pytest_addoption(parser):
         help="Укажите окружение: dev, test или stage"
     )
 
+
 @pytest.fixture(scope="session")
 def config(request):
     env = request.config.getoption("--env")
@@ -21,10 +22,12 @@ def config(request):
         raise ValueError(f"Неизвестное окружение: {env}")
     return config
 
+
 @pytest.fixture(scope="session")
 def playwright_instance():
     with sync_playwright() as p:
         yield p
+
 
 @pytest.fixture(scope="session")
 def browser(playwright_instance):
@@ -32,11 +35,13 @@ def browser(playwright_instance):
     yield browser
     browser.close()
 
+
 @pytest.fixture(scope="function")
 def page(browser):
     page = browser.new_page()
     yield page
     page.close()
+
 
 @pytest.fixture(scope="session")
 def api_request_context(playwright_instance, config):
@@ -45,6 +50,7 @@ def api_request_context(playwright_instance, config):
     )
     yield request_context
     request_context.dispose()
+
 
 @pytest.fixture
 def auth_token(api_request_context, config):
@@ -68,6 +74,3 @@ def auth_token(api_request_context, config):
     assert response.ok, f"Login failed with status: {response.status}"
 
     return response.json()["token"]
-
-
-
