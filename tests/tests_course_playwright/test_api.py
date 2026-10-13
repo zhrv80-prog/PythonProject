@@ -2,6 +2,7 @@ import time
 
 from playwright.sync_api import expect
 
+# Command for start: "tests/tests_course_playwright/test_api.py --env stage"
 
 def test_register_user(api_request_context, config):
     unique_email = f"testuser{int(time.time())}@example.com"
