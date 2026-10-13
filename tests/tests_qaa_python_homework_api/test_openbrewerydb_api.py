@@ -30,7 +30,6 @@ def test_openbrewerydb_url_api_id_is_string(openbrewerydb_url_api):
 
     url = f"{openbrewerydb_url_api}v1/breweries/b54b16e1-ac3b-4bff-a11f-f7ae9ddc27e0"
     r = requests.get(url, timeout=5)
-    print(url)
 
     data = r.json()
     validate(instance=data, schema=schema)
