@@ -1,6 +1,7 @@
 import pytest
 import requests
 
+# conftest.py для homework_api
 
 @pytest.fixture(scope="session")
 def dog_url_api():
@@ -14,7 +15,7 @@ def openbrewerydb_url_api():
     return "https://api.openbrewerydb.org/"
 
 @pytest.fixture(scope="session")
-def jsonplaceholder_url_api():
+def placeholder_url_api():
     """Базовый url api """
     return "https://jsonplaceholder.typicode.com/"
 
