@@ -1,6 +1,8 @@
 import pytest
 import requests
 
+# Добавляем опции url и method
+
 def pytest_addoption(parser):
     parser.addoption(
         "--url",
