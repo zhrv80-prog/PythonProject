@@ -3,11 +3,13 @@ import requests
 
 
 @pytest.fixture(scope="session")
+#Добавляем параметр url
 def base_url(request):
     return request.config.getoption("--url")
 
 
 @pytest.fixture(scope="session")
+#Добавляем параметр status_code
 def expected_status_code(request):
     return request.config.getoption("--status_code")
 
