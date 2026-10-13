@@ -1,5 +1,7 @@
 from playwright.sync_api import expect
 
+# env = dev by default
+
 # GET
 def test_get_request(api_request_context, config):
     response = api_request_context.get(f"{config['api_base_url']}posts/1")
