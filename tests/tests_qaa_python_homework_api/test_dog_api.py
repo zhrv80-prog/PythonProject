@@ -2,6 +2,7 @@ import requests
 import pytest
 from jsonschema import validate
 
+# 5 Тестов из них 2 c параметризацией
 
 # ===== ТЕСТ 1: Статус-код. =====
 @pytest.mark.parametrize("breed_name", ["affenpinscher", "collie", "dingo"])
