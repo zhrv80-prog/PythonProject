@@ -4,6 +4,7 @@ from urllib import response
 from playwright.sync_api import expect
 from jsonschema import validate
 
+# Command for start: "tests/tests_course_playwright/test_api_dop.py --env stage"
 
 def test_get_contacts_schema(api_request_context, auth_token):
     assert auth_token
