@@ -1,6 +1,7 @@
 import requests
 from jsonschema.validators import validate
 
+# Тестирование json c помощью validate из jsonschema.validators
 
 def test_api_json_schema(base_url):
     res = requests.get(base_url + "/todos/1")
