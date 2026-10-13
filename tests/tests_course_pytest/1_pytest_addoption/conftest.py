@@ -14,10 +14,12 @@ def pytest_addoption(parser):
         help="method to execute"
     )
 
+# Фикстура для url
 @pytest.fixture
 def base_url(request):
     return request.config.getoption("--url")
 
+# Фикстура для method
 @pytest.fixture
 def request_method(request):
     return getattr(requests, request.config.getoption("--method"))
