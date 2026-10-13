@@ -1,6 +1,8 @@
 import cerberus
 import requests
 
+# Тестирование json с помощью cerberus
+
 def test_api_json_schema(base_url):
     """Проверка структуры ответа на запрос /todos/1"""
     res = requests.get(base_url + "/todos/1")
