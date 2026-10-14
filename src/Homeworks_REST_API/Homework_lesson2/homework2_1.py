@@ -1,5 +1,6 @@
 import json
 
+# Домашнее задание №5: Парсинг JSON
 json_text = """
 {
   "messages": [
@@ -17,3 +18,4 @@ json_text = """
 
 data = json.loads(json_text)
 print(data["messages"][1]["message"])
+
