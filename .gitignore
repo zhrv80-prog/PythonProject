@@ -12,3 +12,4 @@ reports/
 .vscode/
 .env
 *.log
+tests/tests_course_playwright/storage.json
