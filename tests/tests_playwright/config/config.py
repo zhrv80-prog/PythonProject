@@ -3,7 +3,7 @@ ENV_CONFIG = {
         "base_url": "http://www.dev.com",
         "api_base_url": "https://jsonplaceholder.typicode.com/",
         "username": "testuser@example.com",
-        "password": "Password123"
+        "password": ""
     },
     "test": {
         "base_url": "http://www.test.com",
@@ -13,6 +13,6 @@ ENV_CONFIG = {
         "base_url": "https://thinking-tester-contact-list.herokuapp.com",
         "api_base_url": "https://thinking-tester-contact-list.herokuapp.com",
         "username": "testuser@example.com",
-        "password": "Password123"
+        "password": ""
     }
 }

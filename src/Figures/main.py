@@ -1,7 +1,7 @@
-from src.Homework1_figures.circle import Circle
-from src.Homework1_figures.rectangle import Rectangle
-from src.Homework1_figures.square import Square
-from src.Homework1_figures.triangle import Triangle
+from src.Figures.circle import Circle
+from src.Figures.rectangle import Rectangle
+from src.Figures.square import Square
+from src.Figures.triangle import Triangle
 
 
 def main():

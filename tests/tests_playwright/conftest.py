@@ -1,6 +1,6 @@
 import time
 import pytest
-from tests.tests_course_playwright.config.config import ENV_CONFIG
+from tests.tests_playwright.config.config import ENV_CONFIG
 from playwright.sync_api import sync_playwright
 import os
 

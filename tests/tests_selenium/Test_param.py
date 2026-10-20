@@ -39,7 +39,7 @@ def test_param(browser, url1):
         #авторизоваться со своими логином и паролем 
         #Заполняем логин и пароль
         input1 = browser.find_element(By.CSS_SELECTOR, ".ember-text-field.ember-view.sign-form__input[name='login']")
-        input1.send_keys("zhrv80@gmail.com")
+        input1.send_keys("")
         input2 = browser.find_element(By.CSS_SELECTOR, ".ember-text-field.ember-view.sign-form__input[name='password']")
         input2.send_keys("")
 

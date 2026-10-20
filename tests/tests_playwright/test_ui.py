@@ -1,6 +1,6 @@
 from playwright.sync_api import expect
 
-# Command for start: pytest tests/tests_course_playwright/test_ui.py --env stage
+# Command for start: pytest tests/tests_playwright/test_ui.py --env stage
 
 def test_login_via_api_and_check_dashboard(page, auth_token, config):
     # Используем токен из фикстуры auth_token

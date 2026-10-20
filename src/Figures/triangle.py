@@ -1,6 +1,6 @@
 import math
 
-from src.Homework1_figures.figure import Figure
+from src.Figures.figure import Figure
 
 
 class Triangle(Figure):

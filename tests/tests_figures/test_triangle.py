@@ -1,4 +1,4 @@
-from src.Homework1_figures.triangle import Triangle
+from src.Figures.triangle import Triangle
 
 
 class TestTriangle:
