@@ -5,8 +5,6 @@ import pytest
 from selene import browser, be, have
 
 
-
-# Вариант 1
 def test_submit_form():
     browser.config.window_width = 1920
     browser.config.window_height = 1080
@@ -88,7 +86,8 @@ def test_submit_form():
         be.visible)
     browser.element('//div[contains(@class, "subjects-auto-complete__multi-value__label") and text()="Maths"]').should(
         be.visible)
-    browser.element('//div[contains(@class, "subjects-auto-complete__multi-value__label") and text()="History"]').should(
+    browser.element(
+        '//div[contains(@class, "subjects-auto-complete__multi-value__label") and text()="History"]').should(
         be.visible)
 
     # Заполняем Hobbies
@@ -136,7 +135,8 @@ def test_submit_form():
     browser.element("#uploadPicture").send_keys(r"C:\Users\Yo\PycharmProjects\PythonProject\image.png")
 
     # Вводим текущий адрес
-    browser.element("#currentAddress").send_keys("Priya Sharma Flat 4B, Sunrise Residency 12 Nehru Nagar, Andheri West Mumbai, Maharashtra 400058")
+    browser.element("#currentAddress").send_keys(
+        "Priya Sharma Flat 4B, Sunrise Residency 12 Nehru Nagar, Andheri West Mumbai, Maharashtra 400058")
 
     # Заполняем State
     browser.element("#react-select-3-input").click().type('N')
@@ -148,6 +148,17 @@ def test_submit_form():
 
     # Отправлям форму Submit
     browser.element("#submit").click()
+
+
+    #
+    # #Можно проверить заполнение в таблице после отправки
+    # browser.all('.table-responsive td:nth-child(2)').should(have.text(
+    #     'John',
+    #     'Do',
+    #     'john_do@example.com'
+    #     .......................
+    #     итд
+    # ))
 
     time.sleep(2)
 
