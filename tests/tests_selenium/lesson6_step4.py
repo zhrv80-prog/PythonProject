@@ -1,6 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time 
+import time
+
+# Ссылка на урок https://stepik.org/lesson/138920/step/4?unit=196194
 
 link = "http://suninjuly.github.io/simple_form_find_task.html"
 

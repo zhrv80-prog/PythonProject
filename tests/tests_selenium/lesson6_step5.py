@@ -3,6 +3,8 @@ from selenium.webdriver.common.by import By
 import time
 import math
 
+# Ссылка на урок https://stepik.org/lesson/138920/step/5?unit=196194
+
 link = "http://suninjuly.github.io/find_link_text"
 
 try:

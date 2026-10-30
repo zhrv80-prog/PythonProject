@@ -40,7 +40,7 @@ def test_circle():
     """
     r = 23
     # TODO сосчитайте площадь
-    area = pi * r**2
+    area = pi * r ** 2
 
     assert area == 1661.9025137490005
 
@@ -86,7 +86,6 @@ def test_dicts():
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
     d = dict(zip(first, second))
-
 
     assert isinstance(d, dict)
     assert len(d) == 5
