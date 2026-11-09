@@ -1,6 +1,8 @@
 from datetime import time
 import pytest
 
+import this
+
 def test_dark_theme_by_time():
     """
     Протестируйте правильность переключения темной темы на сайте в зависимости от времени
